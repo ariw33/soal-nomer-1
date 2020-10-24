@@ -1,0 +1,71 @@
+<html>
+<head></head>
+<body>
+
+<script>
+var n=prompt("Masukkan nilai ");
+n=parseInt(n);
+
+//ATAS
+for(i=n;i>0;i--){
+for(j=1;j<=i-1;j++){
+  document.write('&nbsp&nbsp');
+  }
+
+//kiri atas
+for(y=1;y<=n-i+1;y++){
+  if (y==1||y==n-i+1||i==1) {
+    document.write('*');
+    }
+  else {
+    document.write('&nbsp&nbsp');
+    }
+
+//kanan atas
+}
+
+for(l=1;l<=n-i;l++){
+  if (l==n-i||i==1) {
+    document.write('*');
+    }
+  else {
+    document.write('&nbsp&nbsp');
+    }
+  }
+
+document.write('<br>');
+}
+
+
+//BAWAH
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=i;j++){
+document.write('&nbsp&nbsp');
+}
+
+//kiri bawah
+for(y=1;y<=n-i;y++){
+  if (y==1||y==n-i) {
+    document.write('*');
+    }
+  else {
+    document.write('&nbsp&nbsp');
+    }
+  }
+
+//kanan bawah
+for(l=1;l<n-i;l++){
+  if (l==n-i-1) {
+    document.write('*');
+    }
+  else {
+    document.write('&nbsp&nbsp');
+    }
+  }
+
+document.write('<br>');
+}
+</script>
+</body>
+</html>
